@@ -4,12 +4,14 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
 	
-		ArrayList <Persona> studentList = new ArrayList <>();
+		LinkedList<Persona> lista=new LinkedList<Persona>();
+		
 	    String fileIn = "0_test_balanced_5000.csv";
 	    String line = null;
 
@@ -97,12 +99,14 @@ public class Main {
         	String x2= temp[75];
         	String y2= temp[76];
         	String z2= temp[77];
-	        studentList.add(new Persona(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, a1, b1, c1, d1, e1, f1, g1, h1, i1, j1, k1, l1, m1, n1, o1, p1, q1, r1, s1, t1, u1, v1, w1, x1, y1, z1,a2, b2, c2, d2, e2, f2, g2, h2, i2, j2, k2, l2, m2, n2, o2, p2, q2, r2, s2, t2, u2, v2, w2, x2, y2, z2));
+      
+	        lista.add(new Persona(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, a1, b1, c1, d1, e1, f1, g1, h1, i1, j1, k1, l1, m1, n1, o1, p1, q1, r1, s1, t1, u1, v1, w1, x1, y1, z1,a2, b2, c2, d2, e2, f2, g2, h2, i2, j2, k2, l2, m2, n2, o2, p2, q2, r2, s2, t2, u2, v2, w2, x2, y2, z2));
 	    
 	   
 	}
-	    for(int i = 0; i < studentList.size(); i++) {   
-	        System.out.println(studentList.get(i));
+	    System.out.println(lista.size());
+	    for(int i = 0; i < lista.size(); i++) {   
+	        System.out.println(lista.get(i));
 	    }
 	}
 }
