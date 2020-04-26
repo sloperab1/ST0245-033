@@ -18,19 +18,7 @@ public class Lab4 {
 		      System.out.println(sc.nextLine()); 
 		  
 		} 
-		public void searchByAuthor(file.nextLine, String a){
-	        if(n == a) {
-	        	System.out.println("");
-	        }
-	    }
-	    
-	    public ArrayList<String> searchBySize(Tree n, double s){
-	       
-	    }
-	    
-	    public void printFiles(NodeDirectory a){
-	        
-	    }
+	
 	    @Override
 		public String toString() {
 			return "Lab4 []";
